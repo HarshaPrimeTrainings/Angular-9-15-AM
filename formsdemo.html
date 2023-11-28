@@ -1,0 +1,42 @@
+<script>
+
+function validate(){
+  var username =  document.getElementById('usr').value;
+  var password =  document.getElementById('pwd').value;
+
+  if(username == null || username == ''){
+   document.getElementById('err').innerHTML = 'USERNAME NOT VALID';
+   document.getElementById('usr').setAttribute("style","border-color: red;");
+   document.getElementById('perr').innerHTML = '';
+   document.getElementById('pwd').setAttribute("style","border-color: black;");
+      return false;
+  }else if( password==null || password==''){
+   document.getElementById('perr').innerHTML = 'PASSWORD NOT VALID';
+   document.getElementById('pwd').setAttribute("style","border-color: red;");
+   document.getElementById('err').innerHTML = '';
+   document.getElementById('usr').setAttribute("style","border-color: black;");
+   
+   return false;
+  }
+}
+
+</script>
+
+
+
+<center>
+<form  method="get" action="home.html" onsubmit="return validate()">
+   <h1>From Demo</h1>
+   <p style="color: red; font-size: x-small;" id="err"></p>
+   UserName : <input type="text" name="username" id="usr" onblur="validate()">
+   <br/><br/>
+   <p style="color: red; font-size: x-small;" id="perr"></p>
+   Password : <input type="password" name="pwd" id="pwd" onblur="validate()">
+   <br/><br/>
+   Contact : <input type="text" name="cont">
+   <br/><br/>
+   Email : <input type="text" name="email">
+   <br/><br/>
+   <input type="submit" >
+</form>
+</center>
