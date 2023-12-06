@@ -1,22 +1,34 @@
-class Demo{
+export class Demo{
 
-username:string = 'vivek';
+public username:string = 'vivek';
 
-    greet(){
-        console.log('Iam Greet Method');
-        console.log('Good Morning '+this.username);
-    }
-     
-    sayHello(username){
-       let section = 'ECE';
-        console.log('Good Morning '+this.username + " belongs "+ section);
-        console.log('Good Morning '+username);
+protected address:string = 'Hyd';
+
+private pin: number = 112233;
+
+static contact= 999999999;
+
+static demomethod(){
+    console.log('Static Method');
+}
+
+protected sayHello(){
+    console.log('From Say Hello');
+}
+
+private withdraw(){
+    console.log('Some amount withdrawn');
+}
+
+public  greet(){
+        console.log('Hello Iam Greet Method');
+        console.log('addr '+ this.address);
+        this.sayHello();
+        console.log('PIN '+ this.pin);
+        this.withdraw();
     }
 
 }
 
-let d = new Demo();
-
-console.log(d.username);
-d.greet();
-d.sayHello('Anand');
+console.log(Demo.contact);
+Demo.demomethod();
