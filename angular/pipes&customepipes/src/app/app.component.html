@@ -1,0 +1,16 @@
+<h1 appDemo>App Component </h1>
+<input type="text" #agein>
+<input type="button" (click)="isEligble(agein.value)">
+
+<div *ngIf="age>18">Hello There!!! You are eligble Volte You have right to spoil tha state</div>
+
+
+<ul *ngFor="let temp of topics">
+<li>{{temp|uppercase}}</li>
+</ul>
+
+<h1 appDemo>Hello From Custome Directieve</h1>
+<input type="number" #number >
+<button (click)="setPrice(number.value)">CHECK</button>
+
+<h1 *ngIf="price>0">{{price| evenodd}}</h1>
