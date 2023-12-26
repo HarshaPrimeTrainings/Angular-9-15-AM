@@ -1,0 +1,22 @@
+<style>
+    table,tr,th,td{
+        border: solid 1px;
+    }
+</style>
+
+<h1 appDemo>App Component </h1>
+
+    <table *ngIf="users.length>0">
+        <tr >
+            <th>ID</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>ADDRESS</th>
+        </tr>
+        <tr *ngFor="let usr of  users">
+            <td>{{usr.id}} </td>
+            <td>{{usr.username}}</td>
+            <td>{{usr.email}}</td>
+            <td>{{usr.address.city}}</td>
+        </tr>
+    </table>
