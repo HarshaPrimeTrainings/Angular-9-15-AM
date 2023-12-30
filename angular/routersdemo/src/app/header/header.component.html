@@ -1,0 +1,7 @@
+<header *ngIf="login=='true'">
+    <nav>
+      <a routerLink="inbox">INBOX</a>
+      <a routerLink="sent">SENT</a>
+      <span><button (click)="logout()">LOGOUT</button></span>
+    </nav>
+</header>

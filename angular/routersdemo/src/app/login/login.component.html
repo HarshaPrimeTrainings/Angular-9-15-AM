@@ -1,0 +1,8 @@
+<h1>Please Login</h1>
+<div class="loginform">
+<form #loginForm="ngForm" (submit)="validateUser(loginForm.value)"> 
+    Username: <input type="text" required name="usr" ngModel> <br/><br/>
+    Password: <input type="password" required name="pwd" ngModel> <br/><br/>
+    <input type="submit" value="LOGIN">
+</form>
+</div>

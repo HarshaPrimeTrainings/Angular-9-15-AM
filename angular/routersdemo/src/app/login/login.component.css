@@ -1,0 +1,9 @@
+.loginform{
+    margin: auto;
+    align-content: center;
+    align-items: center;
+}
+
+.ng-touched.ng-invalid{
+    border-color: red;
+}

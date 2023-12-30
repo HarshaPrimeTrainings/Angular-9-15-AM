@@ -1,0 +1,28 @@
+header{
+padding: 30px;
+background-color: cadetblue;
+color: chocolate;
+height: 50%;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.routerclass{
+    margin: auto;
+    text-align: center;
+}
+
+a{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
